@@ -1,0 +1,25 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./recommender_model/*
+
+include recommender_model/datasets/test_v04_08_2022.csv
+include recommender_model/fitted_model/*
+include recommender_model/fitted_slu/*.npy
+include recommender_model/fitted_le/*.pkl
+include recommender_model/VERSION
+include recommender_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+exclude ./research_work/*
+exclude ./recommender_model/fitted_backup/*
+exclude ./recommender_model/datasets/train_v04_08_2022.csv
+exclude ./.tox/*
+exclude ./.git/*
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

@@ -1,0 +1,31 @@
+package_name: recommender_model
+
+model_name: fitted_model_v
+zipped_model_name: zipped_model_v
+
+label_encoder_name: fitted_label_encoder_v
+
+users_string_lookup_name: user_ids_slu_v
+books_string_lookup_name: book_titles_slu_v
+
+train_data_file: train_v
+test_data_file: test_v
+data_version: 04_08_2022
+
+features_to_drop_tr:
+  - RatingOf5
+  - Genre
+features_to_drop_te:
+  - User
+book_column: ISBN
+user_column: User
+
+label_encode_columns: 
+  - User
+  - ISBN
+batch_size: 8196
+k_recommendations: 100
+second_embed_dim: 16
+epochs: 3
+learning_rate: 0.1
+tf_seed: 0
