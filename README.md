@@ -2,10 +2,10 @@
 
 This is a Python package and API I built for recommending books to users based on millions of user reviews that have I have scraped. The package and API are kept in this single repo to facilitate access to them; otherwise, the package is downloadable through `pip install --extra-index-url https://pypi.fury.io/mohbenaicha/ book-recommender==0.0.1` for the latest version and the API can be launched locally as follows:
 
-1. clone this repo `git init`, `git clone https://github.com/mohbenaicha/Book-recommender-app`
+1. clone this repo `git init`, `git clone https://github.com/mohbenaicha/Book--Recommender-System`
 2. create new environment such as: `conda create --name newenv`
 3. setup tox `pip install tox`
-4. cd into the appropriate directory then cd into recommender-api/: `cd book-recommender-app/recommender-api/`
+4. cd into the appropriate directory then cd into recommender-api/: `cd Book--Recommender-System/recommender-api/`
 5.  `tox -e run` (give it some time to setup dependecies and including book-recommender)
 6.  use the link provided by uvicorn to access the api's GUI
 
@@ -37,8 +37,8 @@ curl -X 'POST' \
 
 #### Using the Django-based api
 
-1. clone this repo `git init`, `git clone https://github.com/mohbenaicha/Book-recommender-app`
-2. cd into the appropriate directory then cd into django-based-api/: `cd book-recommender-app/django-based-api/`
+1. clone this repo `git init`, `git clone https://github.com/mohbenaicha/Book--Recommender-System`
+2. cd into the appropriate directory then cd into django-based-api/: `cd Book--Recommender-System/django-based-api/`
 3. create new environment such as: `conda create --name newenv`
 4. setup API dependencies `pip install -rrequirements.txt`
 5. launch Python; the recommender model features a large neural net which needs to be unzipped to work properly:
