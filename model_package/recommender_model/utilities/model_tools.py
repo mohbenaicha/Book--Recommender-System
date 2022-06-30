@@ -35,8 +35,8 @@ class TwoTowerModel(tfrs.Model):
     def compute_loss(self, features, training=False) -> tf.Tensor:
         # Define how the loss is computed.
 
-        user_embeddings = self.user_model(features[1])
-        book_embeddings = self.book_model(features[0])
+        user_embeddings = self.user_model(features[:, 1])
+        book_embeddings = self.book_model(features[:, 0])
 
         return self.task(user_embeddings, book_embeddings, compute_metrics=False)
 
